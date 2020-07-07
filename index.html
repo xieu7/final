@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rae Design</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--  客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- 使用wow js 滾輪-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!--  設定Navbar緊貼畫面上緣 -->
+    <!--  點擊滾動目標 -->
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <!-- 手持畫面裝置按鈕 -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <!-- 改向右對齊 -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutmeSection">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#DesignSection">Design</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container" class="sticky-top">
+            <div class="face-box1 text-center">
+                <a href="./index2.html"><h1 class="design text-secondary">Design</h1></a>
+                </div>
+                
+                
+            <div class="face-box2 text-center">
+                <a href="#aboutmeSection"><h1 class="aboutme text-secondary" Align="Center">About<br/>me</h1></a>
+            </div>
+                
+        </div>
+    </header>
+
+
+
+    <!-- header end -->
+    <!-- aboutme -->
+    <!--  設定introSection 上下padding為5倍 -->
+    <section id="aboutmeSection" class="py-5">
+        <div class="container">
+        <div class="aboutme-line">
+        <h1 class="section-title text-center text-secondary my-5">About me</h1>
+        </div>
+            <!--  修正排版為三項排一排 -->
+            <div class="aboutme-box">
+                <div class="row justify-content-center py-5">
+                    <div class="col-sm-4">
+                        <!-- 設定使用者照片變圓型 -->
+                        <img class="w-100 rounded-circle" src="./img/salon2.png" alt="user photo">
+                        <h4 class="title text-center text-secondary my-5" style="font-weight: 700;">謝允晨</h4>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="experience text-center">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <h4 class="text-secondary px-3 py-3" style="font-weight: 700;">Experience</h4>
+                            <ul class="text-left">   
+                                <li>2020/02 擔任康樂股長</li>
+                                <li>2020/02 育秀盃創意獎17th 複賽入圍</li>
+                                <li>2019/08 XLab數位整合設計研究室實習</li>
+                            </ul>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+    <!-- aboutmeSection end -->
+    <!-- DesignSection -->
+    <section id="DesignSection" class="text-secondary">
+        <div class="container">
+            <div class="video-line">
+            <h1 class="section-title my-5 text-center">Design</h1>
+            <div class="seemore"><a href="./index2.html">see more >>></a></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 my-5">
+                <!-- gallerySection -->
+                <section id="gallerySection">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div id="galleryImage1" class="col-md-3 col-sm-6">
+                            <div class="gallery-text"></div>
+                        </div>
+                        <div id="galleryImage2" class="col-md-3 col-sm-6">
+                            <div class="gallery-text"></div>
+                        </div>
+                        <div id="galleryImage3" class="col-md-3 col-sm-6">
+                            <div class="gallery-text"></div>
+                        </div>
+                        <div id="galleryImage4" class="col-md-3 col-sm-6">
+                            <div class="gallery-text"></div>
+                        </div>
+                    </div>
+                    </div>                    
+                    </section>
+                    <!-- gallerySection end -->
+
+                    <!-- 為article3 article4 設置tab互動方式 -->
+                    <div class="tab-content">
+                        <article class="tab-pane-active my-3" id="article3"></article>
+                        <article class="tab-pane my-3" id="article4"></article>
+                    </div>
+                    
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l5u--B6V_fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!-- DesignSection end -->
+    
+<!-- footer -->
+<footer>
+    <div class="footer-box px-5 bg-white">
+        <div>
+            <div class="row justify-content-center py-5 mx-5">
+            <div class="col-6 col-lg-6 col-sm-3 footer-list">
+                <h5 class="text-uppercase">ABOUT ME</h5>
+                <p>謝允晨&nbsp;Rae</p>
+                <p style="line-height: 30px;">From Taipei, Taiwan.Outside of work, I like to listen to music, read books, watch movies, go shopping, chat with friends, visit exhibitions and learn new things.</p>
+            </div>
+            
+            <div class="col-3 col-lg-3 col-sm-3 footer-list">
+                <h5 class="text-uppercase">SITE LINKS</h5>
+                <ul>                        
+                    <li>
+                        <a href="#aboutmeSection">About me</a>
+                    </li>
+                    <li>
+                        <a href="#DesignSection">Design</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-lg-3 col-sm-3 footer-list">
+                <h5 class="text-uppercase">SOCIAL</h5>
+                <ul>
+                    <li>
+                        <a href="4a61c073@stust.edu.tw">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100003868669643">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/xieu7/">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-end bg-dark">
+        <p class="text-white text-center py2">&copy; Copy right 2020</p>
+    </div>
+</footer>
+<!-- footer end -->
+
+    <!--  設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <button onclick="topFunction()" id="goBackBtn" href="header" class="">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <script>
+         //Get the button
+        var goBackBtn= document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            goBackBtn.style.display = "block";
+          } else {
+            goBackBtn.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

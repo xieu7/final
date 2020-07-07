@@ -1,0 +1,317 @@
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    padding: 0px 250px;
+}
+
+.navbar .nav-item a{
+    color:#000;
+}
+
+.navbar .nav-item a:hover{
+    color:#ffc000;
+}
+
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/*  加入背景圖片 */
+#header {
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 180px 0px 100px 0px;
+    background-color: rgba(0, 0, 0, .11);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+#header > .container{
+    position: relative;
+    z-index: 5;
+    display: flex; 
+    align-items: center;
+    justify-content:space-evenly;
+    background-image: url(../img/face1.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+}
+
+.face-box1,
+.face-box2 {
+    width: 760px;
+    height: 704px;
+    /* padding: 15px 15px; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center; 
+}
+
+.face-box1:hover{
+    width: 760px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 22px 22px rgba(0,0,0,.1);
+    background-image: url(../img/designer2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0px;
+}
+
+.face-box2:hover{
+    width: 760px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 22px 22px rgba(0,0,0,.1);
+    background-image: url(../img/aboutme2.png);
+    background-repeat: no-repeat;
+}
+
+.face-box1 a,
+.face-box2 a{
+    text-decoration:none;
+    color: #fff;
+}
+
+.face-box1 h1,
+.face-box2 h1 {
+    width: 760px;
+    font-size: 50px;
+    line-height: normal;
+    justify-content:center;
+}
+
+
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+/*=============================================
+=                  aboutme                    =
+=============================================*/
+
+.aboutme-box {
+    font-family: 微軟正黑體;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-out;
+    padding: 15px 15px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content:center;
+}
+
+.aboutme-line ,
+.video-line{
+    width: 100%;
+    height: 6px;
+    background-color: #ffc000;
+    border-radius: 3px;
+    margin: 10px auto;
+    transition: all .5s ease;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content:center;
+}
+
+.aboutme-line h1,
+.video-line h1{
+    width: 280px;
+    background-color: #fff;
+}
+
+.experience{
+    border: #ffc000 solid 5px;
+    border-radius: 15px;
+}
+
+.experience ul li{
+    list-style:none;
+    margin: 10px;
+    font-family: 微軟正黑體;
+    font-weight: 500;
+}
+
+.experience ul li:before{
+    content: "●";
+    color: #ffc000;
+    padding: 0 20px;
+}
+
+/*=============================================
+=                  Design                     =
+=============================================*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    }
+    
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+/*  設定Hover特效 */
+
+.seemore{
+    position: absolute;
+    right: 30px;
+    width: 300px;
+   
+    background-color: #fff;
+    font-family: 微軟正黑體;
+    padding: 0 50px;
+}
+
+.seemore a{
+    text-decoration:none;
+    color: black;
+}
+
+.seemore :hover{
+    color: #ffc000;
+}
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    /* transition: all .5s ease; */
+}
+
+[id^='galleryImage']>.gallery-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: all .5s ease;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.gallery-text {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/make1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/make2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/make3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/make4.jpg');
+}
+
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #ffc000;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+
+.footer-list ul li {
+    padding: 10px 0px;
+    border-bottom:1px solid rgb(235, 235, 235);
+
+}
+
+.footer-list p{
+    font-family: 微軟正黑體;
+    margin: 10px 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+.footer-list h4,h5{
+    color: #000;
+}
+
+.footer-list a{
+    text-decoration:none;
+    color:#000;
+}
+
+.footer-list ul li a:hover{
+    color:#ffc000;
+}
+
+.footer-end{
+    height: 20px;
+    /* color: #fff; */
+    line-height: 20px;
+}
+

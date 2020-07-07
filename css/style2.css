@@ -1,0 +1,309 @@
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    padding: 0px 250px;
+}
+
+.navbar .nav-item a{
+    color:#000;
+}
+
+.navbar .nav-item a:hover{
+    color:#ffc000;
+}
+
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+/*=============================================
+=                  aboutme                    =
+=============================================*/
+
+.aboutme-box 
+.product-box{
+    font-family: 微軟正黑體;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-out;
+    padding: 15px 15px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content:center;
+}
+
+.line{
+    width: 100%;
+    height: 6px;
+    background-color: #ffc000;
+    border-radius: 3px;
+    margin: 10px auto;
+    transition: all .5s ease;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content:center;
+}
+
+.line h1{
+    width: 280px;
+    background-color: #fff;
+}
+
+.paint-box,
+.product-box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+.box{
+    border: #ffc000 solid 5px;
+    border-radius: 15px;
+    height: 300px;
+    margin: 30px;
+}
+
+.box ul li{
+    list-style:none;
+    margin: 10px;
+    font-family: 微軟正黑體;
+    font-weight: 500;
+}
+
+.box ul li:before{
+    content: "●";
+    color: #ffc000;
+    padding: 0 20px;
+}
+
+/*=============================================
+=                  Product                     =
+=============================================*/
+.card{
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:0 3px 5px #ccc;
+    display: inline-block;
+    margin: 30px;
+}
+.card-photo{
+    width: 100%;
+}
+
+.card-body{
+    padding: 10px;
+    margin: 0px;
+} 
+
+.text{
+    color: #000;
+}
+.fas{
+    padding: 5px;
+}
+
+
+/*=============================================
+=                  Paint                     =
+=============================================*/
+.pcard{
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:0 3px 5px #ccc;
+    display: inline-block;
+    margin: 30px 0px;
+}
+.paint-photo{
+    width: 100%;
+}
+
+.paint-body{
+    padding: 10px;
+    margin: 0px;
+    font-family: 微軟正黑體;
+} 
+
+.paint-body h4{
+    font-weight: 700;
+}
+
+.text{
+    color: #000;
+}
+.fas{
+    padding: 5px;
+}
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #ffc000;
+}
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+/*  設定Hover特效 */
+
+.seemore{
+    position: absolute;
+    right: 30px;
+    width: 300px;
+   
+    background-color: #fff;
+    font-family: 微軟正黑體;
+    padding: 0 50px;
+}
+
+.seemore a{
+    text-decoration:none;
+    color: black;
+}
+
+.seemore :hover{
+    color: #ffc000;
+}
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    /* transition: all .5s ease; */
+}
+
+[id^='galleryImage']>.gallery-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: all .5s ease;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.gallery-text {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/make1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/make2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/make3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/make4.jpg');
+}
+
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #ffc000;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+
+.footer-list ul li {
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom:1px solid rgb(73, 73, 73);
+}
+
+.footer-list p{
+    font-family: 微軟正黑體;
+    margin: 10px 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+.footer-list h4,h5{
+    color: #000;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color:#000;
+}
+
+.footer-list ul li a:hover{
+    color:#ffc000;
+}
+
+.footer-end{
+    height: 20px;
+    /* color: #fff; */
+    line-height: 20px;
+}
+
